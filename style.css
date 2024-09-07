@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: "Oswald", sans-serif;
+}
+
+header {
+    padding: 30px;
+    background-color: #4a362f;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header div i {
+    color: white;
+    font-size: 50px;
+}
+
+header div nav ul {
+   display: flex;
+   gap: 20px; 
+}
+
+header div nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+header div nav ul li a:hover{
+    color: #a5968f8a;
+    transition: 0.6s;
+}
+
+
+/* Estilização Section 01 */
+#section-01 {
+    padding: 180px;
+    background-color: #978f84;
+}
+/* FORMATAÇÃO PADRÃO DAS CAIXAS */
+.div-imoveis div {
+    width: 200px;
+    height: 300px;
+}
+/* ELEMENTO PAI DAS DIV´S */
+.div-imoveis {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 35px;
+    margin-bottom: 30px;
+}
+
+/* IMAGENS DAS CAIXAS */
+.div-imoveis .div-01 {
+    background-image: url(imagens/building-5523630_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.div-imoveis .div-02 {
+    background-image: url(imagens/house-8923726_1280.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.div-imoveis .div-03 {
+    background-image: url(imagens/interior-4226020_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.div-imoveis .div-04 {
+    background-image: url(imagens/new-home-2409165_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.div-imoveis .div-05 {
+    background-image: url(imagens/palace-7035917_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.div-imoveis .div-06 {
+    background-image: url(imagens/window-7454482_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* FIM DA SECTION-01 */
+
+/* INÍCIO SECTION-02 */
+#section-02 {
+    padding: 180px;
+    background-image: url(imagens/architecture-3928896_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#section-02 div {
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: #b7ae8fbb;
+    padding: 25px;
+}
+/* FIM DA SECTION-02 */
+
+
+/* INÍCIO SECTION-03 */
+#section-03 {
+    padding: 180px;
+    background-color: #978f84;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#section-03 div {
+    width: 350px;
+    height: 300px;
+    background-color: #d9d9db;
+    padding: 25px;
+}
+
+footer {
+    padding: 30px;
+    background-color: #4a362f;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div-img-footer i {
+    font-size: 50px;
+    color: white;
+}
+
+.div-sociais i {
+    background-color: rgb(45, 44, 44);
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+.div-list-footer a {
+    text-decoration: none;
+    color: white;
+}
