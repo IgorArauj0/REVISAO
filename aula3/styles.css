@@ -1,0 +1,98 @@
+/* Estilos básicos */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 1rem; /* Padding rem para consistência com o tamanho da fonte raiz */
+    text-align: center;
+}
+
+.main-content {
+    padding: 2rem; /* Espaçamento interno da área principal */
+}
+
+.section {
+    padding: 2em; /* Padding em, relativo ao tamanho da fonte do pai */
+    margin-bottom: 2em; /* Espaço abaixo de cada seção */
+    border-radius: 8px;
+    position: relative;
+}
+
+.section-1 {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.section-2 {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.section-3 {
+    background-color: #f39c12;
+    color: white;
+}
+
+/* Estilo das caixas */
+.box {
+    background-color: #fff;
+    color: #000;
+    padding: 2rem; /* Padding aumentado para maior visibilidade */
+    margin: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem; /* Tamanho da fonte aumentado para maior legibilidade */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+}
+
+/* Layout das caixas */
+.box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
+    width: calc(50% - 2rem); /* Largura das caixas ajustada para caber duas por linha com espaçamento */
+    float: left;
+}
+
+/* Limpeza do float */
+.section::after {
+    content: ""; /* Adiciona um elemento invisível após o conteúdo da seção */
+    display: table; /* Faz com que o elemento invisível se comporte como um bloco, forçando o contêiner a incluir elementos flutuantes */
+    clear: both; /* Garante que o contêiner "limpe" os elementos flutuantes, evitando problemas de layout */
+}
+
+/* Responsividade */
+
+/* Ajuste para telas grandes (largura acima de 1200px) */
+@media (min-width: 1200px) {
+    .box {
+        width: calc(33.333% - 2rem); /* Largura de 33.333% para três caixas por linha */
+    }
+}
+
+/* Ajuste para telas médias (largura até 1200px) */
+@media (max-width: 1200px) {
+    .box {
+        width: calc(50% - 2rem); /* Largura de 50% para duas caixas por linha */
+    }
+}
+
+/* Ajuste para telas pequenas (largura até 768px) */
+@media (max-width: 768px) {
+    .box {
+        width: calc(100% - 2rem); /* Largura de 100% para uma caixa por linha */
+    }
+}
+
+/* Ajuste para telas muito pequenas (largura até 480px) */
+@media (max-width: 480px) {
+    
+    header, footer {
+        padding: 1rem; /* Reduzir o padding do header e footer em telas pequenas */
+    }
+    .section {
+        padding: 1em; /* Reduzir o padding das seções */
+    }
+}
