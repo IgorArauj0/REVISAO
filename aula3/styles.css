@@ -14,6 +14,7 @@ header {
 
 .main-content {
     padding: 2rem; /* Espaçamento interno da área principal */
+        color: #3498db;
 }
 
 .section {
@@ -21,6 +22,7 @@ header {
     margin-bottom: 2em; /* Espaço abaixo de cada seção */
     border-radius: 8px;
     position: relative;
+    
 }
 
 .section-1 {
