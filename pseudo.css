@@ -1,0 +1,22 @@
+h1::after {
+    content: '';
+    width: 140px;
+    height: 4px;
+    background-color: violet;
+    display: block;
+    margin: 10px auto;
+
+}
+
+h1::before {
+    content: '';
+    width: 140px;
+    height: 4px;
+    background-color: violet;
+    display: block;
+    margin: 10px auto;
+
+}
+ h1 {
+    text-align: center;
+ }
