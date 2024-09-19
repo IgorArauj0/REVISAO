@@ -1,9 +1,10 @@
 /* Estilos básicos */
-body {
+* {
     margin: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.6; /* Distância entre linhas*/
 }
+
 
 header {
     background-color: #3498db;
@@ -14,15 +15,14 @@ header {
 
 .main-content {
     padding: 2rem; /* Espaçamento interno da área principal */
-        color: #3498db;
+        color: #3498db; 
 }
 
 .section {
     padding: 2em; /* Padding em, relativo ao tamanho da fonte do pai */
     margin-bottom: 2em; /* Espaço abaixo de cada seção */
     border-radius: 8px;
-    position: relative;
-    
+    position: relative; /**/
 }
 
 .section-1 {
@@ -39,7 +39,6 @@ header {
     background-color: #f39c12;
     color: white;
 }
-
 /* Estilo das caixas */
 .box {
     background-color: #fff;
@@ -55,7 +54,7 @@ header {
 /* Layout das caixas */
 .box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
     width: calc(50% - 2rem); /* Largura das caixas ajustada para caber duas por linha com espaçamento */
-    float: left;
+    float: left; /*Trabalha com a distribuição dos elemento ... */
 }
 
 /* Limpeza do float */
