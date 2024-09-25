@@ -4,38 +4,32 @@
     box-sizing: border-box; /*O box-sizing: border-box garante que o padding seja incluído no cálculo da largura, evitando que o conteúdo ultrapasse a tela.*/
 }
 
-
-html {
+html { /*Aqui estamos definindo que nosso HTML ocupe totalidade em relação a altura e largura da nossa Página*/
     width: 100vw;
     height: 100vh;
 }
 
-
 header {
-    padding: 10vh;
+    padding: 10vh; /*VOU VOLTAR AQUI*/
     background-color: bisque;
-    width: 100vw;
+    width: 100vw;/*definimos a largura total do HEADER*/
 }
-
 
 
 .section-01 {
-    background-color: yellow;
-    padding: 20vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
+    background-color: yellow; /*Definição cor de fundo*/
+    padding: 20vh; /*Preenchimento*/
+    display: flex; /*Tornando a section flex*/
+    justify-content: space-between; /*Justificando o conteúdo*/
+    align-items: center; /*Alinhando os itens ao centro*/
+    width: 100vw; /*Defindo a largura para 100%*/
 }
-
 
 section:last-child {
 background-color: aquamarine;
 padding: 30vh;
 width: 100vw;
 }
-
-
 
 .div-01 p {
     font-size: 2em;
@@ -47,8 +41,6 @@ width: 100vw;
     width: 30rem;
 }
 
-
-
 footer {
     padding: 10vh;
     background-color: bisque;
@@ -58,26 +50,20 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
+/*Estilização para tamanhos de telas específicos
+ou seja, para uma Largura máxima de 766px*/
 @media (max-width: 766px){
     .section-01 {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem;
     }
 
-
     .div-02 img {
-        margin: 0 auto;
-        width: 20rem;
+        margin: 0 auto; /*Aqui estou chamando a Imagem e definindo que a mesma fique com os valores superior/inferior em 0 e as laterais sejam auto*/
+        width: 20rem; /*Largura da Imagem*/
     }
 
     .div-01 p {
