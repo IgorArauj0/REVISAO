@@ -1,34 +1,70 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /*O box-sizing: border-box garante que o padding seja incluído no cálculo da largura, evitando que o conteúdo ultrapasse a tela.*/
+    box-sizing: border-box;
+    /* O box-sizing: border-box garante que o padding seja incluído no cálculo da largura, evitando que o conteúdo ultrapasse a tela. */
 }
 
-html { /*Aqui estamos definindo que nosso HTML ocupe totalidade em relação a altura e largura da nossa Página*/
-    width: 100vw;
+html {
+    width: 100%;
     height: 100vh;
 }
 
 header {
-    padding: 10vh; /*VOU VOLTAR AQUI*/
-    background-color: bisque;
-    width: 100vw;/*definimos a largura total do HEADER*/
+    padding: min(5vh, 4rem); /* Ajustado o padding para ser mais flexível */
+    background-color: #204b5e;
+    width: 100%; /* Alteramos de 100vw para 100% */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Aqui começamos o posicionamento do header */
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999; /*Eixo Z, profundidade do HEADER*/
+
+    /* Borda inferior */  
+    box-shadow: 0 0.21rem 0.5rem white;
 }
+
+header i {
+    color: white;
+    font-size: 6em;
+}
+
+
+header button {
+    width: 13rem;
+    height: 1.5em;
+    background-color: #426b65;
+    border-radius: 1rem;
+    padding: 1.3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 
 
 .section-01 {
-    background-color: yellow; /*Definição cor de fundo*/
-    padding: 20vh; /*Preenchimento*/
-    display: flex; /*Tornando a section flex*/
-    justify-content: space-between; /*Justificando o conteúdo*/
-    align-items: center; /*Alinhando os itens ao centro*/
-    width: 100vw; /*Defindo a largura para 100%*/
+    background-color: #baab6a;
+    padding: min(20vh, 6rem); /* Ajustado para manter flexibilidade em telas menores */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Corrigido de 100vw para 100% */
 }
 
-section:last-child {
-background-color: aquamarine;
-padding: 30vh;
-width: 100vw;
+.section-02 {
+    background-color: #fbea80; /* Alterei a cor para diferenciar as sections */
+    padding: min(20vh, 6rem); /* Ajustado para flexibilidade */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Alteramos de 100vw para 100% */
 }
 
 .div-01 p {
@@ -37,42 +73,67 @@ width: 100vw;
 }
 
 .div-02 img {
-    margin: 5rem;
+    margin: 5rem auto;
     width: 30rem;
+    display: block; /* Garantindo que a imagem se comporte como um bloco */
 }
 
 footer {
-    padding: 10vh;
+    padding: min(10vh, 4rem);
     background-color: bisque;
-    width: 100vw;
+    width: 100%; /* Corrigido de 100vw para 100% */
 }
 
+/* Estilização para tamanhos de telas menores */
+@media (max-width: 830px) { /*de 766 para 830, onde estava começando a de fato quebrar*/
+    header i {
+        color: white;
+        font-size: 3em;
+        z-index: 999;
+    }
+
+
+    header button {
+        width: 10rem;
+        height: 0.8em;
+        background-color: #426b65;
+        border-radius: 1rem;
+        padding: 1.3rem;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 
 
-/*Estilização para tamanhos de telas específicos
-ou seja, para uma Largura máxima de 766px*/
-@media (max-width: 766px){
     .section-01 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 5rem;
+        padding: 9rem;
+    }
+
+    .section-02 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 9rem;
     }
 
     .div-02 img {
-        margin: 0 auto; /*Aqui estou chamando a Imagem e definindo que a mesma fique com os valores superior/inferior em 0 e as laterais sejam auto*/
-        width: 20rem; /*Largura da Imagem*/
+        margin: 0 auto;
+        width: 20rem;
     }
 
     .div-01 p {
-      font-size: 25px; /* Ajuste o tamanho da fonte para se adequar à tela menor */
-      line-height: 1.5; /* Espaçamento entre linhas para melhor legibilidade */
-      width: 100%; /* Certifique-se de ocupar toda a largura */
-      margin: 1em;
+        font-size: 2rem;
+        /* Ajuste responsivo com rem */
+        line-height: 1.5;
+        text-align: left;
+        width: 100%;
+        margin: 1em;
     }
 }
-
-
-
