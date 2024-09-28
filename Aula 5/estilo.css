@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* O box-sizing: border-box garante que o padding seja incluído no cálculo da largura, evitando que o conteúdo ultrapasse a tela. */
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    padding: min(10vh, 4rem);
+    /* Ajustado o padding para ser mais flexível */
+    background-color: #204b5e;
+    width: 100%;
+    /* Alteramos de 100vw para 100% */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Aqui começamos o posicionamento do header */
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    /*Eixo Z, profundidade do HEADER*/
+
+    /* Borda inferior */
+    box-shadow: 0 0.21rem 0.5rem white;
+}
+
+header i {
+    color: white;
+    font-size: 6em;
+}
+
+
+header button {
+    width: 13rem;
+    height: 1.5em;
+    background-color: #426b65;
+    border-radius: 0.4rem;
+    padding: 1.3rem;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section-01 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #baab6a;
+    width: 100%;
+    padding: min(20vh, 6rem);
+}
+
+.section-02 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #baab6a;
+    width: 100%;
+    padding: min(20vh, 6rem);
+}
+
+
+.div-01 p {
+    font-size: 2em;
+    margin: 1.2em;
+}
+
+.div-02 img {
+    width: 30rem;
+    margin: 5rem auto;
+    display: block;
+    /*Garantindo que a imagem se comporte como um bloco*/
+}
+
+footer {
+    background-color: bisque;
+    width: 100%;
+    padding: min(10vh, 4rem);
+}
+
+
+
+
+@media(max-width: 830px) {
+    header i {
+        font-size: 5.5em;
+        z-index: 999;
+    }
+
+    header button {
+        width: 10rem;
+        height: 0.8rem;
+    }
+
+    .section-01 {
+        padding: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .section-02 {
+        padding: 9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .div-01 p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        text-align: left;
+        padding: 2.3rem;
+        width: 100%;
+        margin: 1em;
+    }
+
+    .div-02 img {
+        width: 20rem;
+        margin: 0 2rem;
+    }
+
+}
