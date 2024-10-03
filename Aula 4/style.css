@@ -46,6 +46,30 @@ header button {
 }
 
 
+/* estilização do ícone do whatsaap */
+
+
+/* Define a classe 'whatsapp' */
+.whatsapp {
+    position: relative; /* Permite que elementos posicionados dentro da classe sejam posicionados em relação a ela */
+}
+
+/* Estiliza a imagem dentro da classe 'whatsapp' */
+.whatsapp img {
+    position: fixed; /* Mantém a imagem em uma posição fixa na tela, mesmo ao rolar a página */
+    bottom: 20px;    /* Define a distância da imagem em relação à parte inferior da tela */
+    right: 20px;     /* Define a distância da imagem em relação à direita da tela */
+    width: 5rem;     /* Define a largura da imagem como 5 unidades de rem (relativas ao tamanho da fonte) */
+    height: auto;    /* Ajusta a altura da imagem automaticamente para manter a proporção */
+}
+
+
+/* Vamos ajusta um pouco a largura da imagem em telas menores usando a sessão do @media */
+
+
+
+
+
 
 
 
@@ -224,5 +248,10 @@ footer {
         text-align: left;
         width: 100%;
         margin: 1em;
+    }
+
+
+    .whatsapp img {
+        width: 3.5rem;
     }
 }
